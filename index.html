@@ -25,10 +25,6 @@
             -ms-transform: translateX(-50%);
             -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-            display: block;
-        }
-
-        .popup::before {
             display: none;
         }
 
@@ -95,7 +91,7 @@
             border-top: 10px solid white;
         }
     </style>
-    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <!-- <script src="jquery/jquery-3.3.1.min.js"></script> -->
 </head>
 
 <body>
@@ -345,6 +341,42 @@
 
 
     </svg>
+    <div class="popup" id="one-popup">
+        <h3>FALCO Zrt. </h3>
+        <p>City: Szombathely</p>
+        <p>Country: Hungary</p>
+    </div>
+
+    <div class="popup" id="two-popup">
+        <h3>Stavebniny DEK s.r.o. </h3>
+        <p>City: Bratislava</p>
+        <p>Country: Slovakia</p>
+    </div>
+
+<div class="popup" id="three-popup">
+            <h3>CETRIS Hranice </h3>
+            <p>City: Hranice</p>
+            <p>Country: Czech Republic</p>
+        </div>
+
+    <div class="popup" id="four-popup">
+            <h3>UNION LESNÍ BRÁNA, a.s. </h3>
+            <p>City: Dubí</p>
+            <p>Country: Czech Republic</p>
+        </div>
+
+    <div class="popup" id="five-popup">
+            <h3>VELOX-WERK s.r.o. </h3>
+            <p>City: Hranice</p>
+            <p>Country: Czech Republic</p>
+        </div>
+
+    <div class="popup" id="six-popup">
+            <h3>CSP BZS </h3>
+            <p>City: Krichev</p>
+            <p>Country: Belarus</p>
+        </div>
+
     <div class="popup" id="seven-popup">
         <h3>Salzag SLG </h3>
         <p>City: Zella-Mehlis</p>
@@ -379,6 +411,135 @@
 
 
     <script>
+        // 1
+var oneIcon = document.getElementById("1");
+        var onePopup = document.getElementById("one-popup");
+        var hungaryCountry = document.getElementById("HU");
+
+        oneIcon.addEventListener("mouseover", showOnePopup);
+        oneIcon.addEventListener("mouseout", hideOnePopup);
+
+        function showOnePopup(evt) {
+            var iconPos = oneIcon.getBoundingClientRect();
+            onePopup.style.left = (evt.pageX) + "px";
+            onePopup.style.top = (evt.pageY - 130) + "px";
+            onePopup.style.display = "block";
+            hungaryCountry.style.fill = "#CC2929";
+        }
+
+        function hideOnePopup(evt) {
+            onePopup.style.display = "none";
+            hungaryCountry.style.fill = "#f4cb42";
+        }
+
+
+// 2
+var twoIcon = document.getElementById("2");
+        var twoPopup = document.getElementById("two-popup");
+        var slovakiaCountry = document.getElementById("SK");
+
+        twoIcon.addEventListener("mouseover", showTwoPopup);
+        twoIcon.addEventListener("mouseout", hideTwoPopup);
+
+        function showTwoPopup(evt) {
+            var iconPos = twoIcon.getBoundingClientRect();
+            twoPopup.style.left = (evt.pageX) + "px";
+            twoPopup.style.top = (evt.pageY - 130) + "px";
+            twoPopup.style.display = "block";
+            slovakiaCountry.style.fill = "#CC2929";
+        }
+
+        function hideTwoPopup(evt) {
+            fivePopup.style.display = "none";
+            slovakiaCountry.style.fill = "#f4cb42";
+        }
+
+
+        // 3
+var threeIcon = document.getElementById("3");
+        var threePopup = document.getElementById("three-popup");
+        var czechCountry = document.getElementById("CZ");
+
+        threeIcon.addEventListener("mouseover", showThreePopup);
+        threeIcon.addEventListener("mouseout", hideThreePopup);
+
+        function showThreePopup(evt) {
+            var iconPos = sixIcon.getBoundingClientRect();
+            threePopup.style.left = (evt.pageX) + "px";
+            threePopup.style.top = (evt.pageY - 130) + "px";
+            threePopup.style.display = "block";
+            czechCountry.style.fill = "#CC2929";
+        }
+
+        function hideThreePopup(evt) {
+            threePopup.style.display = "none";
+            czechCountry.style.fill = "#f4cb42";
+        }
+
+
+        // 4
+var fourIcon = document.getElementById("4");
+        var fourPopup = document.getElementById("four-popup");
+
+        fourIcon.addEventListener("mouseover", showFourPopup);
+        fourIcon.addEventListener("mouseout", hideFourPopup);
+
+        function showFourPopup(evt) {
+            var iconPos = sixIcon.getBoundingClientRect();
+            fourPopup.style.left = (evt.pageX) + "px";
+            fourPopup.style.top = (evt.pageY - 130) + "px";
+            fourPopup.style.display = "block";
+            czechCountry.style.fill = "#CC2929";
+        }
+
+        function hideFourPopup(evt) {
+            fourPopup.style.display = "none";
+            czechCountry.style.fill = "#f4cb42";
+        }
+
+
+// 5
+var fiveIcon = document.getElementById("5");
+        var fivePopup = document.getElementById("five-popup");
+
+        fiveIcon.addEventListener("mouseover", showFivePopup);
+        fiveIcon.addEventListener("mouseout", hideFivePopup);
+
+        function showFivePopup(evt) {
+            var iconPos = sixIcon.getBoundingClientRect();
+            fivePopup.style.left = (evt.pageX) + "px";
+            fivePopup.style.top = (evt.pageY - 130) + "px";
+            fivePopup.style.display = "block";
+            czechCountry.style.fill = "#CC2929";
+        }
+
+        function hideFivePopup(evt) {
+            fivePopup.style.display = "none";
+            czechCountry.style.fill = "#f4cb42";
+        }
+
+
+// 6
+var sixIcon = document.getElementById("6");
+        var sixPopup = document.getElementById("six-popup");
+        var belarusCountry = document.getElementById("BY");
+
+        sixIcon.addEventListener("mouseover", showSixPopup);
+        sixIcon.addEventListener("mouseout", hideSixPopup);
+
+        function showSixPopup(evt) {
+            var iconPos = sixIcon.getBoundingClientRect();
+            sixPopup.style.left = (evt.pageX) + "px";
+            sixPopup.style.top = (evt.pageY - 130) + "px";
+            sixPopup.style.display = "block";
+            belarusCountry.style.fill = "#CC2929";
+        }
+
+        function hideSixPopup(evt) {
+            sixPopup.style.display = "none";
+            belarusCountry.style.fill = "#f4cb42";
+        }
+
 
         // 7
         var sevenIcon = document.getElementById("7");
@@ -393,16 +554,12 @@
             sevenPopup.style.left = (evt.pageX) + "px";
             sevenPopup.style.top = (evt.pageY - 130) + "px";
             sevenPopup.style.display = "block";
-            sevenIcon.onmouseover = function () {
-                germanyCountry.style.fill = "#CC2929";
-            }
+            germanyCountry.style.fill = "#CC2929";
         }
 
         function hideSeventhPopup(evt) {
             sevenPopup.style.display = "none";
-            sevenIcon.onmouseout = function () {
-                germanyCountry.style.fill = "#f4cb42";
-            }
+            germanyCountry.style.fill = "#f4cb42";
         }
 
 
@@ -419,16 +576,12 @@
             eightPopup.style.left = (evt.pageX) + "px";
             eightPopup.style.top = (evt.pageY - 130) + "px";
             eightPopup.style.display = "block";
-            eightIcon.onmouseover = function () {
-                polandCountry.style.fill = "#CC2929";
-            }
+            polandCountry.style.fill = "#CC2929";
         }
 
         function hideEightPopup(evt) {
             eightPopup.style.display = "none";
-            eightIcon.onmouseout = function () {
-                polandCountry.style.fill = "#f4cb42";
-            }
+            polandCountry.style.fill = "#f4cb42";
         }
 
 
@@ -445,16 +598,12 @@
             ninePopup.style.left = (evt.pageX) + "px";
             ninePopup.style.top = (evt.pageY - 130) + "px";
             ninePopup.style.display = "block";
-            nineIcon.onmouseover = function () {
-                polandCountry.style.fill = "#CC2929";
-            }
+            polandCountry.style.fill = "#CC2929";
         }
 
         function hideNinePopup(evt) {
             ninePopup.style.display = "none";
-            nineIcon.onmouseout = function () {
-                polandCountry.style.fill = "#f4cb42";
-            }
+            polandCountry.style.fill = "#f4cb42";
         }
 
 
@@ -471,16 +620,12 @@
             tenPopup.style.left = (evt.pageX) + "px";
             tenPopup.style.top = (evt.pageY - 130) + "px";
             tenPopup.style.display = "block";
-            tenIcon.onmouseover = function () {
-                polandCountry.style.fill = "#CC2929";
-            }
+            polandCountry.style.fill = "#CC2929";
         }
 
         function hideTenPopup(evt) {
             tenPopup.style.display = "none";
-            tenIcon.onmouseout = function () {
-                polandCountry.style.fill = "#f4cb42";
-            }
+            polandCountry.style.fill = "#f4cb42";
         }
 
 
@@ -497,16 +642,12 @@
             elevenPopup.style.left = (evt.pageX) + "px";
             elevenPopup.style.top = (evt.pageY - 130) + "px";
             elevenPopup.style.display = "block";
-            elevenIcon.onmouseover = function () {
-                polandCountry.style.fill = "#CC2929";
-            }
+            polandCountry.style.fill = "#CC2929";
         }
 
         function hideElevenPopup(evt) {
             elevenPopup.style.display = "none";
-            elevenIcon.onmouseout = function () {
-                polandCountry.style.fill = "#f4cb42";
-            }
+            polandCountry.style.fill = "#f4cb42";
         }
 
         // $description = $(".description");
