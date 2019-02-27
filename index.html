@@ -27,19 +27,16 @@
             transform: translateX(-50%);
             display: none;
         }
-
         html,
         body {
             width: 100%;
         }
-
         svg {
             /* max-width: 100% !important; */
-            width: 1200px;
+            width: 140%;
             height: auto;
             display: block;
         }
-
         .heyo:hover {
             fill: #CC2929;
             -moz-transition: 0.3s;
@@ -47,12 +44,10 @@
             -webkit-transition: 0.3s;
             transition: 0.3s;
         }
-
         .enabled {
             fill: #f4cb42;
             cursor: pointer;
         }
-
         .description {
             pointer-events: none;
             position: absolute;
@@ -73,11 +68,9 @@
             transform: translateX(-50%);
             display: none;
         }
-
         .description.active {
             display: block;
         }
-
         .description:after {
             content: "";
             position: absolute;
@@ -420,10 +413,8 @@
 var oneIcon = document.getElementById("12");
         var onePopup = document.getElementById("one-popup");
         var hungaryCountry = document.getElementById("HU");
-
         oneIcon.addEventListener("mouseover", showOnePopup);
         oneIcon.addEventListener("mouseout", hideOnePopup);
-
         function showOnePopup(evt) {
             var iconPos = oneIcon.getBoundingClientRect();
             onePopup.style.left = (evt.pageX) + "px";
@@ -431,21 +422,16 @@ var oneIcon = document.getElementById("12");
             onePopup.style.display = "block";
             hungaryCountry.style.fill = "#CC2929";
         }
-
         function hideOnePopup(evt) {
             onePopup.style.display = "none";
             hungaryCountry.style.fill = "#f4cb42";
         }
-
-
 // 2
 var twoIcon = document.getElementById("13");
         var twoPopup = document.getElementById("two-popup");
         var slovakiaCountry = document.getElementById("SK");
-
         twoIcon.addEventListener("mouseover", showTwoPopup);
         twoIcon.addEventListener("mouseout", hideTwoPopup);
-
         function showTwoPopup(evt) {
             var iconPos = twoIcon.getBoundingClientRect();
             twoPopup.style.left = (evt.pageX) + "px";
@@ -453,21 +439,16 @@ var twoIcon = document.getElementById("13");
             twoPopup.style.display = "block";
             slovakiaCountry.style.fill = "#CC2929";
         }
-
         function hideTwoPopup(evt) {
             twoPopup.style.display = "none";
             slovakiaCountry.style.fill = "#f4cb42";
         }
-
-
         // 3
 var threeIcon = document.getElementById("3");
         var threePopup = document.getElementById("three-popup");
         var czechCountry = document.getElementById("CZ");
-
         threeIcon.addEventListener("mouseover", showThreePopup);
         threeIcon.addEventListener("mouseout", hideThreePopup);
-
         function showThreePopup(evt) {
             var iconPos = sixIcon.getBoundingClientRect();
             threePopup.style.left = (evt.pageX) + "px";
@@ -475,20 +456,15 @@ var threeIcon = document.getElementById("3");
             threePopup.style.display = "block";
             czechCountry.style.fill = "#CC2929";
         }
-
         function hideThreePopup(evt) {
             threePopup.style.display = "none";
             czechCountry.style.fill = "#f4cb42";
         }
-
-
         // 4
 var fourIcon = document.getElementById("4");
         var fourPopup = document.getElementById("four-popup");
-
         fourIcon.addEventListener("mouseover", showFourPopup);
         fourIcon.addEventListener("mouseout", hideFourPopup);
-
         function showFourPopup(evt) {
             var iconPos = sixIcon.getBoundingClientRect();
             fourPopup.style.left = (evt.pageX) + "px";
@@ -496,20 +472,15 @@ var fourIcon = document.getElementById("4");
             fourPopup.style.display = "block";
             czechCountry.style.fill = "#CC2929";
         }
-
         function hideFourPopup(evt) {
             fourPopup.style.display = "none";
             czechCountry.style.fill = "#f4cb42";
         }
-
-
 // 5
 var fiveIcon = document.getElementById("5");
         var fivePopup = document.getElementById("five-popup");
-
         fiveIcon.addEventListener("mouseover", showFivePopup);
         fiveIcon.addEventListener("mouseout", hideFivePopup);
-
         function showFivePopup(evt) {
             var iconPos = sixIcon.getBoundingClientRect();
             fivePopup.style.left = (evt.pageX) + "px";
@@ -517,21 +488,16 @@ var fiveIcon = document.getElementById("5");
             fivePopup.style.display = "block";
             czechCountry.style.fill = "#CC2929";
         }
-
         function hideFivePopup(evt) {
             fivePopup.style.display = "none";
             czechCountry.style.fill = "#f4cb42";
         }
-
-
 // 6
 var sixIcon = document.getElementById("6");
         var sixPopup = document.getElementById("six-popup");
         var belarusCountry = document.getElementById("BY");
-
         sixIcon.addEventListener("mouseover", showSixPopup);
         sixIcon.addEventListener("mouseout", hideSixPopup);
-
         function showSixPopup(evt) {
             var iconPos = sixIcon.getBoundingClientRect();
             sixPopup.style.left = (evt.pageX) + "px";
@@ -539,21 +505,16 @@ var sixIcon = document.getElementById("6");
             sixPopup.style.display = "block";
             belarusCountry.style.fill = "#CC2929";
         }
-
         function hideSixPopup(evt) {
             sixPopup.style.display = "none";
             belarusCountry.style.fill = "#f4cb42";
         }
-
-
         // 7
         var sevenIcon = document.getElementById("7");
         var sevenPopup = document.getElementById("seven-popup");
         var germanyCountry = document.getElementById("DE");
-
         sevenIcon.addEventListener("mouseover", showSeventhPopup);
         sevenIcon.addEventListener("mouseout", hideSeventhPopup);
-
         function showSeventhPopup(evt) {
             var iconPos = sevenIcon.getBoundingClientRect();
             sevenPopup.style.left = (evt.pageX) + "px";
@@ -561,21 +522,16 @@ var sixIcon = document.getElementById("6");
             sevenPopup.style.display = "block";
             germanyCountry.style.fill = "#CC2929";
         }
-
         function hideSeventhPopup(evt) {
             sevenPopup.style.display = "none";
             germanyCountry.style.fill = "#f4cb42";
         }
-
-
         //8
         var eightIcon = document.getElementById("8");
         var eightPopup = document.getElementById("eight-popup");
         var polandCountry = document.getElementById("PL");
-
         eightIcon.addEventListener("mouseover", showEightPopup);
         eightIcon.addEventListener("mouseout", hideEightPopup);
-
         function showEightPopup(evt) {
             var iconPos = eightIcon.getBoundingClientRect();
             eightPopup.style.left = (evt.pageX) + "px";
@@ -583,21 +539,15 @@ var sixIcon = document.getElementById("6");
             eightPopup.style.display = "block";
             polandCountry.style.fill = "#CC2929";
         }
-
         function hideEightPopup(evt) {
             eightPopup.style.display = "none";
             polandCountry.style.fill = "#f4cb42";
         }
-
-
-
         //9
         var nineIcon = document.getElementById("9");
         var ninePopup = document.getElementById("nine-popup");
-
         nineIcon.addEventListener("mouseover", showNinePopup);
         nineIcon.addEventListener("mouseout", hideNinePopup);
-
         function showNinePopup(evt) {
             var iconPos = nineIcon.getBoundingClientRect();
             ninePopup.style.left = (evt.pageX) + "px";
@@ -605,21 +555,15 @@ var sixIcon = document.getElementById("6");
             ninePopup.style.display = "block";
             polandCountry.style.fill = "#CC2929";
         }
-
         function hideNinePopup(evt) {
             ninePopup.style.display = "none";
             polandCountry.style.fill = "#f4cb42";
         }
-
-
-
         //10
         var tenIcon = document.getElementById("10");
         var tenPopup = document.getElementById("ten-popup");
-
         tenIcon.addEventListener("mouseover", showTenPopup);
         tenIcon.addEventListener("mouseout", hideTenPopup);
-
         function showTenPopup(evt) {
             var iconPos = tenIcon.getBoundingClientRect();
             tenPopup.style.left = (evt.pageX) + "px";
@@ -627,21 +571,15 @@ var sixIcon = document.getElementById("6");
             tenPopup.style.display = "block";
             polandCountry.style.fill = "#CC2929";
         }
-
         function hideTenPopup(evt) {
             tenPopup.style.display = "none";
             polandCountry.style.fill = "#f4cb42";
         }
-
-
-
         //11
         var elevenIcon = document.getElementById("11");
         var elevenPopup = document.getElementById("eleven-popup");
-
         elevenIcon.addEventListener("mouseover", showElevenPopup);
         elevenIcon.addEventListener("mouseout", hideElevenPopup);
-
         function showElevenPopup(evt) {
             var iconPos = elevenIcon.getBoundingClientRect();
             elevenPopup.style.left = (evt.pageX) + "px";
@@ -649,32 +587,24 @@ var sixIcon = document.getElementById("6");
             elevenPopup.style.display = "block";
             polandCountry.style.fill = "#CC2929";
         }
-
         function hideElevenPopup(evt) {
             elevenPopup.style.display = "none";
             polandCountry.style.fill = "#f4cb42";
         }
-
         // $description = $(".description");
-
         // $('.enabled').hover(function () {
-
         //     $(this).attr("class", "enabled heyo");
         //     $description.addClass('active');
         //     $description.html($(this).attr('name'));
         // }, function () {
         //     $description.removeClass('active');
         // });
-
         // $(document).on('mousemove', function (e) {
-
         //     $description.css({
         //         left: e.pageX,
         //         top: e.pageY - 70
         //     });
-
         // });
-
     </script>
 </body>
 
